@@ -14,7 +14,4 @@ export class AppComponent {
     this.password = 'My PASSWORD';
   }
 
-  getPassword(){
-    return this.password;
-  }
 }
