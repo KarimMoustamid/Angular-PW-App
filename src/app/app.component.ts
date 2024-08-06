@@ -13,7 +13,15 @@ export class AppComponent {
   includeLetters = false;
   includeNumbers = false;
   includeSymbols = false;
+  lenght = 0;
 
+  onChangeLength(value : string) {
+   const parsedValue = parseInt(value);
+
+   if(!isNaN(parsedValue)){
+     this.lenght = parsedValue;
+   }
+  }
   onChangeUseLetters(){
    this.includeLetters = !this.includeLetters;
   }
